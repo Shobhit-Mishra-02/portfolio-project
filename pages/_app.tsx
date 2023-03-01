@@ -6,7 +6,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Navigation />
-      <div className="font-fira-code px-[6px] sm:px-[18px] md:px-[64px] lg:px-[128px] 2xl:px-[256px] bg-ternary min-h-screen text-white">
+      <div className="font-fira-code px-[6px] sm:px-[18px] md:px-[64px] lg:px-[128px] 2xl:px-[168px] bg-ternary min-h-screen text-white">
         <Component {...pageProps} />
       </div>
     </>

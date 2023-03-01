@@ -122,7 +122,7 @@ const Navigation = () => {
 
       {/* navbar for big devices  */}
       <div className="hidden sm:block">
-        <div className="sm:px-[18px] md:px-[64px] lg:px-[128px] 2xl:px-[256px] flex justify-between align-middle items-center py-4 md:py-8">
+        <div className="sm:px-[18px] md:px-[64px] lg:px-[128px] 2xl:px-[168px] flex justify-between align-middle items-center py-4 md:py-8">
           <svg
             className="w-10 h-auto cursor-pointer"
             width="52"
