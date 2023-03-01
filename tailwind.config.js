@@ -15,14 +15,12 @@ module.exports = {
       },
       colors: {
         primary: "#C778DD",
+        primarylight: "rgba(199, 120, 221, 0.2)",
         secondary: "#ABB2BF",
         ternary: "#282C33",
+        offWhite: "rgba(171, 178, 191, 0.2)",
       },
     },
   },
   plugins: [],
 };
-
-// font-family: 'Fira Code', monospace;
-// font-family: 'Open Sans', sans-serif;
-// font-family: 'Roboto', sans-serif;
