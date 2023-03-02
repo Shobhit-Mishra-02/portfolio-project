@@ -12,7 +12,7 @@ const Container = ({ title, text }: { title: string; text: string }) => {
 const AboutPage = () => {
   return (
     <div className="pt-12 font-fira-code">
-      <div>
+      <div className="pb-4">
         <h2 className="font-semibold text-[32px] ">
           <span className="text-primary">/</span>about-me
         </h2>
