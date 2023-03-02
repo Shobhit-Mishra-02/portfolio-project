@@ -32,11 +32,11 @@ const Skills = () => {
           <div>
             <Container title="Languages" text="Typescript CSS HTML Python" />
           </div>
-          <div>
+          <div className="space-y-2">
             <Container title="Databases" text="SQLite PostgreSQL Mongo" />
             <Container title="Other" text="HTML CSS EJS SCSS REST Jinja" />
           </div>
-          <div>
+          <div className="space-y-2">
             <Container
               title="Tools"
               text="VSCode Neovim Linux Figma XFCE Arch Git Font Awesome"
