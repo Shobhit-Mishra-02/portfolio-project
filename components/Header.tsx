@@ -7,11 +7,11 @@ const Header = () => {
             Elias is a <span className="text-primary">web designer</span> and{" "}
             <span className="text-primary">front-end developer</span>
           </h2>
-          <p className="text-secondary md:text-[16px] tracking-wide md:tracking-wider leading-[21px]">
+          <p className="text-secondary md:text-[16px] tracking-wide md:tracking-wider leading-[21px] text-justify sm:text-left">
             He crafts responsive websites where technologies meet creativity
           </p>
 
-          <div className="pt-6 md:pt-8">
+          <div className="pt-6 md:pt-8 flex justify-center align-middle items-center sm:justify-start">
             <button className="text-[16px] px-[16px] py-[8px] border border-primary hover:bg-offWhite">
               Contact me !!
             </button>

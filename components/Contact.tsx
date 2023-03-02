@@ -16,8 +16,8 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="h-auto w-full sm:max-w-[250px] border border-secondary px-4 py-4 flex justify-start align-middle items-start flex-col text-secondary">
-          <h3 className="font-semibold pb-4">Message me here</h3>
+        <div className="h-auto w-fit border border-secondary px-6 py-6 flex justify-start align-middle items-start flex-col text-secondary">
+          <h3 className="font-semibold pb-4 text-white">Message me here</h3>
           <div className="flex justify-start align-middle items-center gap-2 cursor-pointer pb-2 hover:text-white">
             <svg
               width="32"

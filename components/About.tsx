@@ -10,7 +10,7 @@ const About = () => {
 
       <div className="flex justify-center align-middle items-center flex-wrap lg:justify-between">
         <div className="w-full sm:max-w-[515px]">
-          <p className="text-secondary pb-8">
+          <p className="text-secondary pb-8 text-justify">
             Hello, i’m Elias!
             <br />
             <br />
@@ -24,7 +24,7 @@ const About = () => {
             establish their presence online. I always strive to learn about the
             newest technologies and frameworks.
           </p>
-          <div>
+          <div className="flex justify-center align-middle items-center lg:justify-start">
             <button className="text-[16px] px-[16px] py-[8px] border border-primary hover:bg-offWhite">
               Read more {"~~>"}
             </button>

@@ -67,11 +67,11 @@ const Navigation = () => {
         )}
 
         <div
-          className={`list-none absolute bg-ternary ${
+          className={`list-none absolute bg-ternary border-b border-secondary ${
             isMenuOpen ? "top-12" : "-top-[500px]"
-          } right-0 left-0 w-full space-y-4 px-4 pt-8 pb-6 -z-10  transition-all ease-in-out duration-700`}
+          } right-0 left-0 w-full space-y-5 px-4 pt-8 pb-6 -z-10  transition-all ease-in-out duration-700`}
         >
-          <li className="text-2xl w-full cursor-pointer text-secondary hover:text-white">
+          <li className="text-2xl w-full cursor-pointer text-secondary hover:text-white pt-6">
             <span className="text-primary">#</span>home
           </li>
           <li className="text-2xl w-full cursor-pointer text-secondary hover:text-white">
