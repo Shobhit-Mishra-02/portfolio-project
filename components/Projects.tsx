@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Card = () => (
   <div className="w-[330px] h-auto border border-secondary">
     <img
@@ -33,7 +35,7 @@ const Projects = () => {
         </h2>
 
         <h3 className="text-center sm:text-left cursor-pointer">
-          View all ~~{">"}{" "}
+          <Link href={"/projects"}>View all ~~{">"} </Link>
         </h3>
       </div>
 
