@@ -12,7 +12,7 @@ const Header = () => {
           </p>
 
           <div className="pt-6 md:pt-8 flex justify-center align-middle items-center sm:justify-start">
-            <button className="text-[16px] px-[16px] py-[8px] border border-primary hover:bg-offWhite">
+            <button className="text-[16px] px-[16px] py-[8px] border border-primary hover:bg-lightPurple">
               Contact me !!
             </button>
           </div>

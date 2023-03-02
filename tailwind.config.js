@@ -19,6 +19,7 @@ module.exports = {
         secondary: "#ABB2BF",
         ternary: "#282C33",
         offWhite: "rgba(171, 178, 191, 0.2)",
+        lightPurple: "rgba(199, 120, 221, 0.2)",
       },
     },
   },

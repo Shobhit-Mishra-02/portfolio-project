@@ -25,7 +25,7 @@ const About = () => {
             newest technologies and frameworks.
           </p>
           <div className="flex justify-center align-middle items-center lg:justify-start">
-            <button className="text-[16px] px-[16px] py-[8px] border border-primary hover:bg-offWhite">
+            <button className="text-[16px] px-[16px] py-[8px] border border-primary hover:bg-lightPurple">
               Read more {"~~>"}
             </button>
           </div>

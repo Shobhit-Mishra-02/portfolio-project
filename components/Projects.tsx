@@ -12,10 +12,10 @@ const Card = () => (
       <h3 className="text-[24px] font-semibold pb-3">Chert Nodes</h3>
       <p className="pb-4 text-secondary">Minecraft servers hosting </p>
       <div className="pb-4 space-x-4">
-        <button className="text-[16px] px-[16px] py-[8px] border border-primary hover:bg-offWhite">
+        <button className="text-[16px] px-[16px] py-[8px] border border-primary hover:bg-lightPurple">
           Live {"<~>"}
         </button>
-        <button className="text-[16px] px-[16px] py-[8px] border border-primary hover:bg-offWhite">
+        <button className="text-[16px] px-[16px] py-[8px] border border-secondary hover:bg-offWhite">
           Code {"</>"}
         </button>
       </div>
