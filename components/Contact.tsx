@@ -12,7 +12,7 @@ const Contact = () => {
       </div>
 
       <div className="flex justify-center align-middle items-start flex-wrap gap-8 md:justify-between">
-        <div className="w-full sm:max-w-[505px]">
+        <div className="w-full sm:max-w-[405px] lg:max-w-[505px]">
           <p className="text-secondary text-justify">
             I’m interested in freelance opportunities. However, if you have
             other request or question, don’t hesitate to contact me

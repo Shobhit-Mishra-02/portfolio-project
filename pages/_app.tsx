@@ -16,7 +16,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <Footer />
       <div className="hidden lg:block">
         <div className="flex justify-center align-middle items-center w-fit flex-col fixed top-0 left-6 gap-6">
-          <div className="bg-secondary w-[1px] h-[350px]"></div>
+          <div className="bg-secondary w-[1px] h-[320px]"></div>
 
           <div className="w-fit flex justify-center align-middle items-center flex-col space-y-3">
             <IoLogoFigma className="w-8 h-auto fill-secondary hover:fill-white hover:scale-110 transition-all ease-in-out duration-150 cursor-pointer" />

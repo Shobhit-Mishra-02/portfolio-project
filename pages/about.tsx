@@ -19,7 +19,7 @@ const AboutPage = () => {
         <p className="pt-1">who am I ?</p>
       </div>
 
-      <div className="flex justify-center align-middle items-center flex-wrap xl:justify-between lg:gap-6">
+      <div className="flex justify-center align-middle items-center flex-wrap xl:justify-between gap-6">
         <div className="w-full sm:max-w-[515px]">
           <p className="text-secondary pb-8 text-justify">
             Hello, i’m Elias!

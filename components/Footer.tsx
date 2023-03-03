@@ -32,7 +32,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="pt-12 pb-8">
+      <div className="pt-8 pb-8">
         <p className="text-center text-secondary">
           © Copyright 2022. Made by Elias
         </p>

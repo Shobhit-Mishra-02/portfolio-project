@@ -10,8 +10,8 @@ const About = () => {
         </h2>
       </div>
 
-      <div className="flex justify-center align-middle items-center flex-wrap lg:justify-between">
-        <div className="w-full sm:max-w-[515px]">
+      <div className="flex justify-center align-middle items-center flex-wrap lg:justify-between lg:flex-nowrap gap-10">
+        <div className="w-full sm:max-w-[415px] xl:max-w-[515px] h-auto">
           <p className="text-secondary pb-8 text-justify">
             Hello, i’m Elias!
             <br />

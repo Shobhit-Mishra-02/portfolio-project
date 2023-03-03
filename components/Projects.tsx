@@ -34,7 +34,7 @@ const Projects = () => {
           <div className="hidden lg:block w-[300px] h-[1px] bg-primary"></div>
         </h2>
 
-        <h3 className="text-center sm:text-left cursor-pointer">
+        <h3 className="text-center sm:text-left cursor-pointer text-secondary hover:text-white">
           <Link href={"/projects"}>View all ~~{">"} </Link>
         </h3>
       </div>

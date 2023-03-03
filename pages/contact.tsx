@@ -11,7 +11,7 @@ const ContactPage = () => {
         <p className="pt-1">Get in touch</p>
       </div>
 
-      <div className="pt-24 flex justify-center align-middle items-start flex-wrap gap-8 md:justify-between">
+      <div className="pt-24 flex justify-center align-middle items-start flex-wrap gap-8 lg:justify-between">
         <div className="w-full sm:max-w-[505px]">
           <p className="text-secondary text-justify">
             I’m interested in freelance opportunities. However, if you have

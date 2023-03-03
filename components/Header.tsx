@@ -3,17 +3,17 @@ import Link from "next/link";
 const Header = () => {
   return (
     <div>
-      <div className="pt-14 mg:pt-20 flex flex-wrap space-y-8 md:space-y-12 w-full justify-center align-middle items-center xl:justify-between">
-        <div className="w-full sm:max-w-[625px] h-fit">
+      <div className="pt-14 mg:pt-20 flex flex-wrap space-y-8 md:space-y-12 w-full justify-center align-middle items-center  xl:flex-nowrap xl:justify-between">
+        <div className="w-full text-center sm:max-w-[625px] xl:text-left h-fit">
           <h2 className="text-[32px] md:text-5xl font-[600] pb-4 leading-[42px]">
             Elias is a <span className="text-primary">web designer</span> and{" "}
             <span className="text-primary">front-end developer</span>
           </h2>
-          <p className="text-secondary md:text-[16px] tracking-wide md:tracking-wider leading-[21px] text-justify sm:text-left">
+          <p className="text-secondary md:text-[16px] tracking-wide md:tracking-wider leading-[21px] text-center xl:text-left">
             He crafts responsive websites where technologies meet creativity
           </p>
 
-          <div className="pt-6 md:pt-8 flex justify-center align-middle items-center sm:justify-start">
+          <div className="pt-6 md:pt-8 flex justify-center align-middle items-center xl:justify-start">
             <Link href={"/contact"}>
               <button className="text-[16px] px-[16px] py-[8px] border border-primary hover:bg-lightPurple">
                 Contact me !!
@@ -39,7 +39,7 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="pt-8 flex justify-end flex-col align-middle items-end w-full md:max-w-[712px] md:mx-auto">
+      <div className="pt-8 flex justify-end flex-col align-middle items-end w-fit  mx-auto">
         <div className="relative text-xl font-semibold border border-secondary px-8 py-6">
           <svg
             className="absolute -top-4 left-2"
