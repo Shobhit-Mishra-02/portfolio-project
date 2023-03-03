@@ -1,10 +1,40 @@
 import Link from "next/link";
+import { useInView } from "react-intersection-observer";
+import { useState, useEffect } from "react";
 
 const Header = () => {
+  const [ref, isView] = useInView();
+  const [ref2, isView2] = useInView();
+  const [headingComp, setHeadingComp] = useState<boolean>(false);
+  const [headerImage, setHeaderImage] = useState<boolean>(false);
+  const [quoteComp, setQuoteComp] = useState<boolean>(false);
+
+  useEffect(() => {
+    if (isView) {
+      setHeadingComp(true);
+      setHeaderImage(true);
+    }
+  }, [isView]);
+
+  useEffect(() => {
+    if (isView2) {
+      setQuoteComp(true);
+    }
+  }, [isView2]);
+
   return (
     <div>
-      <div className="pt-14 mg:pt-20 flex flex-wrap space-y-8 md:space-y-12 w-full justify-center align-middle items-center  xl:flex-nowrap xl:justify-between">
-        <div className="w-full text-center sm:max-w-[625px] xl:text-left h-fit">
+      <div
+        ref={ref}
+        className="pt-14 mg:pt-20 flex flex-wrap space-y-8 md:space-y-12 w-full justify-center align-middle items-center  xl:flex-nowrap xl:justify-between"
+      >
+        <div
+          className={`w-full text-center sm:max-w-[625px] xl:text-left h-fit relative transition-all ease-in-out duration-500 ${
+            headingComp
+              ? "scale-100 opacity-100 xl:translate-x-0"
+              : "scale-0 opacity-0 xl:-translate-x-full"
+          }`}
+        >
           <h2 className="text-[32px] md:text-5xl font-[600] pb-4 leading-[42px]">
             Elias is a <span className="text-primary">web designer</span> and{" "}
             <span className="text-primary">front-end developer</span>
@@ -22,7 +52,13 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="flex justify-center align-middle items-center flex-col w-full sm:max-w-[469px] xl:pb-[140px]">
+        <div
+          className={`flex justify-center align-middle items-center flex-col w-full sm:max-w-[469px] xl:pb-[140px] relative transition-all ease-in-out duration-500 ${
+            headerImage
+              ? "scale-100 opacity-100 xl:translate-x-0"
+              : "scale-0 opacity-0 xl:translate-x-full"
+          }`}
+        >
           <img
             className="w-full sm:max-w-[469px]"
             src="/images/Hero.png"
@@ -39,7 +75,12 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="pt-8 flex justify-end flex-col align-middle items-end w-fit  mx-auto">
+      <div
+        ref={ref2}
+        className={`pt-8 flex justify-end flex-col align-middle items-end w-fit  mx-auto relative transition-all duration-500 ${
+          quoteComp ? "scale-100 opacity-100" : "scale-0 opacity-0"
+        }`}
+      >
         <div className="relative text-xl font-semibold border border-secondary px-8 py-6">
           <svg
             className="absolute -top-4 left-2"

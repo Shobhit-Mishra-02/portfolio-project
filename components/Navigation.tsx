@@ -1,18 +1,34 @@
-import { useState } from "react";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { IoLogoFigma } from "react-icons/io5";
+import { useInView } from "react-intersection-observer";
 
 const Navigation = () => {
   const [isMenuOpen, toggleMenu] = useState<boolean>(false);
+  const [ref, isView] = useInView();
+  const [navComp, setNavComp] = useState(false);
+
+  useEffect(() => {
+    if (isView) {
+      setNavComp(true);
+    }
+  }, [isView]);
 
   const onToggleMenu = () =>
     isMenuOpen ? toggleMenu(false) : toggleMenu(true);
 
   return (
-    <nav className=" bg-ternary text-white relative z-10 font-fira-code">
+    <nav
+      ref={ref}
+      className=" bg-ternary text-white relative z-10 font-fira-code"
+    >
       {/* navbar for mobile  */}
-      <div className=" px-[6px] sm:hidden flex justify-between align-middle items-center py-2 bg-ternary mt-0">
+      <div
+        className={`px-[6px] sm:hidden flex justify-between align-middle items-center py-2 bg-ternary mt-0 relative ${
+          navComp ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
+        } transition-all ease-in-out duration-500 `}
+      >
         <Link href={"/"}>
           <svg
             className="w-10 h-auto cursor-pointer"
@@ -118,7 +134,11 @@ const Navigation = () => {
       </div>
 
       {/* navbar for big devices  */}
-      <div className="hidden sm:block">
+      <div
+        className={`hidden sm:block relative ${
+          navComp ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
+        } transition-all ease-in-out duration-500`}
+      >
         <div className="sm:px-[18px] md:px-[64px] lg:px-[128px] 2xl:px-[168px] flex justify-between align-middle items-center py-4 md:py-8">
           <Link href={"/"}>
             <svg
