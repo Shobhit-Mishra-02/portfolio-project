@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useInView } from "react-intersection-observer";
 import { useState, useEffect } from "react";
+import { ExpandAnimation } from "./LoadingAnimation";
 
 const About = () => {
   const [headingComp, setHeadingComp] = useState<boolean>(false);
@@ -24,17 +25,19 @@ const About = () => {
 
   return (
     <div className="pt-36 md:pt-44 lg:pt-64 pb-4">
-      <div className="pb-4">
-        <h2
-          ref={ref}
-          className={`text-[32px] text-center sm:text-left lg:flex lg:justify-start lg:align-middle lg:items-center lg:gap-4 relative transition-all duration-500 ease-in-out ${
-            headingComp ? "scale-100 opacity-100" : "scale-0 opacity-0"
-          }`}
-        >
-          <span className="text-primary">#</span>about-me
-          <div className="hidden lg:block w-[300px] h-[1px] bg-primary"></div>
-        </h2>
-      </div>
+      <ExpandAnimation>
+        <div className="pb-4">
+          <h2
+            ref={ref}
+            className={`text-[32px] text-center sm:text-left lg:flex lg:justify-start lg:align-middle lg:items-center lg:gap-4 relative transition-all duration-500 ease-in-out ${
+              headingComp ? "scale-100 opacity-100" : "scale-0 opacity-0"
+            }`}
+          >
+            <span className="text-primary">#</span>about-me
+            <div className="hidden lg:block w-[300px] h-[1px] bg-primary"></div>
+          </h2>
+        </div>
+      </ExpandAnimation>
 
       <div
         ref={ref2}

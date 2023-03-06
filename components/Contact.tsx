@@ -2,6 +2,7 @@ import { IoIosMail } from "react-icons/io";
 import { AiFillLinkedin } from "react-icons/ai";
 import { useInView } from "react-intersection-observer";
 import { useState, useEffect } from "react";
+import { ExpandAnimation } from "./LoadingAnimation";
 
 const Contact = () => {
   const [headingComp, setHeadingComp] = useState<boolean>(false);
@@ -25,16 +26,16 @@ const Contact = () => {
 
   return (
     <div className="pt-36 md:pt-44 lg:pt-64 pb-4">
-      <div ref={ref} className="pb-8 md:pb-10 ">
-        <h2
-          className={`text-[32px] text-center sm:text-left lg:flex lg:justify-start lg:align-middle lg:items-center lg:gap-4 relative transition-all duration-500 ease-in-out ${
-            headingComp ? "scale-100 opacity-100" : "scale-0 opacity-0"
-          }`}
-        >
-          <span className="text-primary">#</span>contacts
-          <div className="hidden lg:block w-[300px] h-[1px] bg-primary"></div>
-        </h2>
-      </div>
+      <ExpandAnimation>
+        <div className="pb-8 md:pb-10 ">
+          <h2
+            className={`text-[32px] text-center sm:text-left lg:flex lg:justify-start lg:align-middle lg:items-center lg:gap-4`}
+          >
+            <span className="text-primary">#</span>contacts
+            <div className="hidden lg:block w-[300px] h-[1px] bg-primary"></div>
+          </h2>
+        </div>
+      </ExpandAnimation>
 
       <div
         ref={ref2}
